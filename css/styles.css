@@ -19,7 +19,6 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-
 }
 
 body {
@@ -29,7 +28,7 @@ body {
 }
 
 section {
-    min-width: 100vh;
+    min-width: 100vw;
     padding: 10rem 9% 2rem;
 }
 
@@ -72,7 +71,6 @@ section {
     color: var(--main-color);
 }
 
-
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
@@ -83,6 +81,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .home-content h3 {
@@ -111,21 +110,20 @@ span {
 }
 
 @keyframes floatImage {
-    0%{
-        transform: translateY(0)
+    0% {
+        transform: translateY(0);
     }
-    50%{
-        transform: translateY(-2.4rem)
+    50% {
+        transform: translateY(-2.4rem);
     }
-    100%{
-        transform: translateY(0)
+    100% {
+        transform: translateY(0);
     }
 }
 
 .home-content p {
     font-size: 1.6rem;
 }
-
 
 .social-media a {
     display: inline-flex;
@@ -183,7 +181,6 @@ span {
 .heading {
     text-align: center;
     font-size: 5rem;
-
 }
 
 .about-content h2 {
@@ -199,7 +196,6 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-
 
 .services h2 {
     margin-bottom: 5rem;
@@ -241,7 +237,6 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
-
 
 .portfolio {
     background: var(--second-bg-color);
@@ -393,8 +388,6 @@ span {
     color: var(--second-bg-color);
 }
 
-
-
 /* breakpoints */
 
 @media (max-width: 1200px) {
@@ -517,7 +510,7 @@ span {
         width: 90vh;
     }
 
-    .about-img img{
+    .about-img img {
         width: 90vh;
     }
 
@@ -525,9 +518,8 @@ span {
         flex-direction: column-reverse;
     }
 
-    .footer p{
+    .footer p {
         text-align: center;
         margin-top: 2rem;
     }
-
 }
